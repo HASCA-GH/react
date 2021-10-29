@@ -3,7 +3,10 @@ import ProductItem from '@components/ProductItem';
 import useGetProducts from '../hooks/useGetProducts';
 import '@styles/ProductList.scss';
 
-const API = 'http://api.escuelajs.co/api/v1/products';
+// const API = 'http://api.escuelajs.co/api/v1/products';
+//Se cambió por https por que salia error con github puesto que estaba accediendo a una url de api no seguro con http
+
+const API = 'https://api.escuelajs.co/api/v1/products';
 
 const ProductList = () => {
 	const products = useGetProducts(API);
